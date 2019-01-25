@@ -1,5 +1,5 @@
 {
-  "name": "nerdlichter/contao-demo-bundle",
+  "name": "contao-bundle-skeleton",
   "type": "contao-bundle",
   "version": "1.0.0",
   "description": "",
@@ -14,15 +14,11 @@
   ],
   "require": {
     "php": ">=7.1",
-    "ext-pdo": "*",
     "contao/core-bundle": "^4.4"
   },
   "require-dev": {
     "contao/manager-plugin": "^2.0",
-    "phpunit/phpunit": "^6.0",
-    "symfony/var-dumper": "^4.2",
-    "larapack/dd": "^1.1",
-    "ext-yaml": "*"
+    "phpunit/phpunit": "^6.0"
   },
   "conflict": {
     "contao/manager-plugin": "<2.0 || >=3.0"
