@@ -1,0 +1,55 @@
+{
+  "name": "nerdlichter/contao-demo-bundle",
+  "type": "contao-bundle",
+  "version": "1.0.0",
+  "description": "",
+  "license": "",
+  "authors": [
+    {
+      "name": "Max Staack",
+      "email": "staack@nerdlichter.com",
+      "homepage": "https://www.nerdlichter.com",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": ">=7.1",
+    "ext-pdo": "*",
+    "contao/core-bundle": "^4.4"
+  },
+  "require-dev": {
+    "contao/manager-plugin": "^2.0",
+    "phpunit/phpunit": "^6.0",
+    "symfony/var-dumper": "^4.2",
+    "larapack/dd": "^1.1",
+    "ext-yaml": "*"
+  },
+  "conflict": {
+    "contao/manager-plugin": "<2.0 || >=3.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Nerdlichter\\DemoBundle\\": "src/"
+    },
+    "classmap": [
+      "src/Resources/contao/"
+    ],
+    "exclude-from-classmap": [
+      "src/Resources/contao/config/",
+      "src/Resources/contao/dca/",
+      "src/Resources/contao/languages/",
+      "src/Resources/contao/templates/"
+    ]
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Nerdlichter\\DemoBundle\\Tests\\": "tests/"
+    }
+  },
+  "extra": {
+    "contao-manager-plugin": "Nerdlichter\\DemoBundle\\ContaoManager\\Plugin"
+  },
+  "config": {
+    "sort-packages": true
+  }
+}
